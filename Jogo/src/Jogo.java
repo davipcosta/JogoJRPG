@@ -442,7 +442,7 @@ public class Jogo {
                     double danototal = inimigo2.getinimigoDefense() - danoplayer;
                     inimigoPV2 -= danototal;
                     if (danototal < 0) danototal = 0;
-                    System.out.println("\nVocê causou: " + danototal + " de dano+\n");
+                    System.out.println("\nVocê causou: " + danototal + " de dano\n");
         
                     // Verifica se o inimigo morreu logo após o ataque
                     if (inimigoPV2 <= 0) {
@@ -452,7 +452,7 @@ public class Jogo {
         
                 } else if (agir2 == 2) {
                     double defensetotal = defenseplayer * 2;
-                    System.out.println("\nSua defesa aumentou para: " + defensetotal+\n);
+                    System.out.println("\nSua defesa aumentou para: " + defensetotal+"\n");
                 } else if (agir2 == 3) {
                     if (cura > 0) {
                         int curaTotal = Pocao.usarPocao(pocaoCura.getPontos());
