@@ -442,25 +442,25 @@ public class Jogo {
                     double danototal = inimigo2.getinimigoDefense() - danoplayer;
                     inimigoPV2 -= danototal;
                     if (danototal < 0) danototal = 0;
-                    System.out.println("\nVocê causou: " + danototal + " de dano");
+                    System.out.println("\nVocê causou: " + danototal + " de dano+\n");
         
                     // Verifica se o inimigo morreu logo após o ataque
                     if (inimigoPV2 <= 0) {
-                        System.out.println("\nO inimigo foi derrotado!");
+                        System.out.println("\nO inimigo foi derrotado!\n");
                         break; // Sai do loop já que o inimigo foi derrotado
                     }
         
                 } else if (agir2 == 2) {
                     double defensetotal = defenseplayer * 2;
-                    System.out.println("\nSua defesa aumentou para: " + defensetotal);
+                    System.out.println("\nSua defesa aumentou para: " + defensetotal+\n);
                 } else if (agir2 == 3) {
                     if (cura > 0) {
                         int curaTotal = Pocao.usarPocao(pocaoCura.getPontos());
                         playerPV += curaTotal;
                         cura--;
-                        System.out.println("\nVocê curou: " + curaTotal + " de PV");
+                        System.out.println("\nVocê curou: " + curaTotal + " de PV\n");
                     } else {
-                        System.out.println("\nVocê não possui mais cura");
+                        System.out.println("\nVocê não possui mais cura\n");
                     }
                 }
         
@@ -475,18 +475,18 @@ public class Jogo {
                     double danoInimigo2total = defenseplayer - danoInimigo2;
                     if (danoInimigo2total < 0) danoInimigo2total = 0;
                     playerPV -= danoInimigo2total;
-                    System.out.println("Seu inimigo causou dano de: " + danoInimigo2total);
+                    System.out.println("Seu inimigo causou dano de: " + danoInimigo2total+"\n");
                 } else if (escolhaInimigo2 == 2) {
                     int def2 = inimigo2.getinimigoDefense() * 2;
-                    System.out.println("Defesa inimiga aumentada para: " + def2);
+                    System.out.println("Defesa inimiga aumentada para: " + def2+"\n");
                 } else if (escolhaInimigo2 == 3) {
                     if (curainimigo2 > 0) {
                         int curaTotal = Pocao.usarPocao(pocaoCura.getPontos());
                         inimigoPV2 += curaTotal;
                         curainimigo2--;
-                        System.out.println("O inimigo curou " + curaTotal + " de PV");
+                        System.out.println("O inimigo curou " + curaTotal + " de PV\n");
                     } else {
-                        System.out.println("O inimigo tenta se curar, mas ele não tem mais cura");
+                        System.out.println("O inimigo tenta se curar, mas ele não tem mais cura\n");
                     }
                 }
         
@@ -506,17 +506,17 @@ public class Jogo {
                     double danoInimigo2total = defenseplayer - danoInimigo2;
                     if (danoInimigo2total < 0) danoInimigo2total = 0;
                     playerPV -= danoInimigo2total;
-                    System.out.println("Seu inimigo causou dano de: " + danoInimigo2total);
+                    System.out.println("Seu inimigo causou dano de: " + danoInimigo2total+"\n");
                 } else if (escolhaInimigo2 == 2) {
                     int def2 = inimigo2.getinimigoDefense() * 2;
-                    System.out.println("Defesa inimiga aumentada para: " + def2);
+                    System.out.println("Defesa inimiga aumentada para: " + def2+"\n");
                 } else if (escolhaInimigo2 == 3) {
                     if (curainimigo2 > 0) {
                         int curaTotal = Pocao.usarPocao(pocaoCura.getPontos());
                         inimigoPV2 += curaTotal;
                         curainimigo2--;
                     } else {
-                        System.out.println("O inimigo tenta se curar, mas ele não tem mais cura");
+                        System.out.println("O inimigo tenta se curar, mas ele não tem mais cura\n");
                     }
                 }
         
@@ -530,14 +530,14 @@ public class Jogo {
                 System.out.println("Seu turno: ");
                 System.out.println(inimigo2.getinimigoName() + " [PV: " + inimigoPV2 + "] ");
                 System.out.println(name + " [PV: " + playerPV + "]  ");
-                System.out.println("1) Atacar   2) Defender   3) Curar");
+                System.out.println("1) Atacar   2) Defender   3) Curar\n");
                 agir2 = input.nextInt();
         
                 if (agir2 == 1) {
                     double danototal = inimigo2.getinimigoDefense() - danoplayer;
                     inimigoPV2 -= danototal;
                     if (danototal < 0) danototal = 0;
-                    System.out.println("Você causou: " + danototal + " de dano");
+                    System.out.println("Você causou: " + danototal + " de dano\n");
         
                     // Verifica se o inimigo foi derrotado
                     if (inimigoPV2 <= 0) {
@@ -553,9 +553,9 @@ public class Jogo {
                         int curaTotal = Pocao.usarPocao(pocaoCura.getPontos());
                         playerPV += curaTotal;
                         cura--;
-                        System.out.println("Você curou: " + curaTotal + " de PV");
+                        System.out.println("Você curou: " + curaTotal + " de PV\n");
                     } else {
-                        System.out.println("Você não tem mais cura");
+                        System.out.println("Você não tem mais cura\n");
                     }
                 }
         
@@ -707,18 +707,18 @@ public class Jogo {
                     double danoBoss = dado6() + dado6() + dado6() + boss.getinimigoForca();
                     double danoBosstotal = defenseplayer - danoBoss;
                     playerPV -= danoBosstotal;
-                    System.out.println("Seu inimigo causou dano de: " + danoBosstotal);
+                    System.out.println("Seu inimigo causou dano de: " + danoBosstotal+"\n");
                 } else if (escolhaInimigo3 == 2) {
                     int def3 = boss.getinimigoDefense() * 2;
-                    System.out.println("o seu inimigo teve a defesa aumentada para: " + def3);
+                    System.out.println("o seu inimigo teve a defesa aumentada para: " + def3+"\n");
                 } else if (escolhaInimigo3 == 3) {
                     if (curaboss > 0) {
                         int curaTotal = Pocao.usarPocao(pocaoCura.getPontos());
                         bossPV += curaTotal;
                         curaboss--;
-                        System.out.println("Inimigo curou " + curaTotal + " de PV");
+                        System.out.println("Inimigo curou " + curaTotal + " de PV\n");
                     } else {
-                        System.out.println("Inimigo tenta se curar, mas ele não tem mais cura");
+                        System.out.println("Inimigo tenta se curar, mas ele não tem mais cura\n");
                     }
                 }
         
@@ -738,24 +738,24 @@ public class Jogo {
                 if (agir3 == 1) {
                     double danototal = boss.getinimigoDefense() - danoplayer;
                     bossPV -= danototal;
-                    System.out.println("Você causou: " + danototal + " de dano");
+                    System.out.println("Você causou: " + danototal + " de dano\n");
         
                     // Verifica se o boss foi derrotado
                     if (bossPV <= 0) {
-                        System.out.println("O boss foi derrotado!");
+                        System.out.println("O boss foi derrotado!\n");
                         break; // Sai do loop já que o boss foi derrotado
                     }
                 } else if (agir3 == 2) {
                     double defensetotal = defenseplayer * 2;
-                    System.out.println("A defesa aumentou para: " + defensetotal);
+                    System.out.println("A defesa aumentou para: " + defensetotal+"\n");
                 } else if (agir3 == 3) {
                     if (cura > 0) {
                         int curaTotal = Pocao.usarPocao(pocaoCura.getPontos());
                         playerPV += curaTotal;
                         cura--;
-                        System.out.println("Você curou " + curaTotal + " de PV");
+                        System.out.println("Você curou " + curaTotal + " de PV\n");
                     } else {
-                        System.out.println("Você não tem mais cura");
+                        System.out.println("Você não tem mais cura\n");
                     }
                 }
         
