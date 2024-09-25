@@ -628,7 +628,7 @@ public class Jogo {
         
 
         //diálogo antes da batalha contra o boss
-
+        System.out.println("Após uma longa jornada repleta de desafios e decisões difíceis, "+player.getName()+ " finalmente chega a seu destino final, encontrando a própria morte em pessoa.");
         System.out.println("1) Continuar");
         opc = input.nextInt();
         Clear();
