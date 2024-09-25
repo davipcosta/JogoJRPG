@@ -402,8 +402,8 @@ public class Jogo {
         }
         //Lista de Inimigos combate 2
         List<Inimigos> inimigos2 = new ArrayList<>();
-        inimigos2.add(new Inimigos("O Cérbero", 130, 4, 100,3));
-        inimigos2.add(new Inimigos("O Ceifador", 150, 5, 100, 2));
+        inimigos2.add(new Inimigos("O Cérbero", 200, 4, 100,3));
+        inimigos2.add(new Inimigos("O Ceifador", 250, 5, 100, 2));
         Inimigos inimigo2 = inimigos2.get(rand.nextInt(inimigos2.size()));
 
         double inimigoPV2;                   
