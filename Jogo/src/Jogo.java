@@ -86,19 +86,19 @@ public class Jogo {
             // Cálculo do dano para arma leve (katana)
             danoplayerLeve = Armas.ArmaLeve1(player.getDestr(), katana.getconstDamage());
             System.out.println("Você irá causar:");
-            System.out.println(danoplayerLeve + " de dano.");
+            System.out.println(danoplayerLeve + " de dano.\n");
             danoplayer += danoplayerLeve;
         } else if (escolhaArmas == 2) {
             // Cálculo do dano para arma leve (adaga)
             danoplayerLeve = Armas.ArmaLeve1(player.getDestr(), adaga.getconstDamage());
             System.out.println("Você irá causar:");
-            System.out.println(danoplayerLeve + " de dano.");
+            System.out.println(danoplayerLeve + " de dano.\n");
             danoplayer += danoplayerLeve;
         } else if (escolhaArmas == 3) {
             // Cálculo do dano para arma pesada (foice)
             danoplayerPesado = Armas.ArmaPesada1(player.getForc(), espadalonga.getconstDamage());
             System.out.println("Você irá causar:");
-            System.out.println(danoplayerPesado + " de dano.");
+            System.out.println(danoplayerPesado + " de dano.\n");
             danoplayer += danoplayerPesado;
         }
     
@@ -120,13 +120,13 @@ public class Jogo {
         double defenseplayer =0;
         if (escolhaArmadura==1) {
             defenseplayer = Armadura.ArmaduraSimples(player.getConstit(),capuznegro.getdefenseConst());
-            System.out.println("Ao vestir esse capuz, você possui "+defenseplayer+" de defesa.");
+            System.out.println("Ao vestir esse capuz, você possui "+defenseplayer+" de defesa.\n");
         }else if (escolhaArmadura==2) {
             defenseplayer = Armadura.ArmaduraMedia(player.getConstit(), cavaleiro.getdefenseConst());
-            System.out.println("Ao vestir essa armadura, você possui "+defenseplayer+" de defesa.");
+            System.out.println("Ao vestir essa armadura, você possui "+defenseplayer+" de defesa.\n");
         }else if (escolhaArmadura==3) {
             defenseplayer = Armadura.ArmaduraPesada(player.getConstit(), capaamanha.getdefenseConst());
-            System.out.println("Ao vestir essa capa, você possui "+defenseplayer+" de defesa.");
+            System.out.println("Ao vestir essa capa, você possui "+defenseplayer+" de defesa.\n");
         }      
 
         System.out.println("1) Continue");
@@ -604,15 +604,15 @@ public class Jogo {
              defenseplayer=0;
             if (escolhaArmadura2==1) {
                 defenseplayer = Armadura.ArmaduraSimples(player.getConstit(), esperanca.getdefenseConst());
-                System.out.println("Sua armadura aumenta sua defesa para "+defenseplayer);
+                System.out.println("Sua armadura aumenta sua defesa para "+defenseplayer+"\n");
                          
             }else if (escolhaArmadura2==2) {
                 defenseplayer = Armadura.ArmaduraMedia(player.getConstit(), bersek.getdefenseConst());
-                System.out.println("Sua armadura aumenta sua defesa para "+defenseplayer);
+                System.out.println("Sua armadura aumenta sua defesa para "+defenseplayer+"\n");
                 
             }else if (escolhaArmadura2==3) {
                 defenseplayer = Armadura.ArmaduraPesada(player.getConstit(), escuridao.getdefenseConst());
-                System.out.println("Sua armadura aumenta sua defesa para "+defenseplayer);
+                System.out.println("Sua armadura aumenta sua defesa para "+defenseplayer+"\n");
                 
             }
 
