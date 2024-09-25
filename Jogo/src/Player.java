@@ -18,6 +18,11 @@ public final class Player {
     private final int initialAgil;
     private final int initialDestr;
 
+    public static int dado6() {
+        Random random = new Random();
+        return random.nextInt(6) + 1;
+    }
+    
     public Player(String name, int pv, int constit, int forc, int agil, int destr, Armas arma, Armadura armadura) {
         setName(name);
         setPv(pv);
@@ -35,11 +40,6 @@ public final class Player {
         initialConstit = constit;
         initialAgil = agil;
         initialDestr = destr;
-    }
-
-    public static int dado6() {
-        Random random = new Random();
-        return random.nextInt(6) + 1;
     }
 
     public void setName(String name) {
