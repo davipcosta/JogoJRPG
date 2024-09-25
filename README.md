@@ -1,4 +1,4 @@
-Este é um código feito em Java, utilizando os conceitos aprendidos em sala de aula, onde criamos o jogo ...
+Este é um código feito em Java, utilizando os conceitos aprendidos em sala de aula, onde criamos o jogo chamado Death Sentence.
 
 Descrição do Projeto: Um guerreiro, que após muitas guerras, acabou por ser derrotado, porém, acordou em um lugar sombrio, e teria que enfrentar inimigos, no entanto, precisa tomar cuidado com suas escolhas, e com essas escolhas, ele pode se tornar alguém melhor.
 
