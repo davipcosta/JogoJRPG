@@ -620,7 +620,7 @@ public class Jogo {
 
         cura = 3;
         //Combate Boss
-        Inimigos boss = new Inimigos("A Morte", 250, 6, 100, 4 );
+        Inimigos boss = new Inimigos("A Morte", 350, 6, 100, 4 );
 
         double bossPV;                   
         bossPV = boss.getinimigoPv();
