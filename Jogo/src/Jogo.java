@@ -149,7 +149,7 @@ public class Jogo {
         int cura = 3, curainimigo =3, curaboss = 3, curainimigo2 =3;
         //Lista de Inimigos combate 1
         List<Inimigos> inimigos1 = new ArrayList<>(); 
-        inimigos1.add(new Inimigos("O Adorador da Morte", 70, 2, 50,2));
+        inimigos1.add(new Inimigos("O Adorador da Morte", 70, 1, 50,2));
         inimigos1.add(new Inimigos("A Alma Corrompida", 60, 1, 50, 3));
         inimigos1.add(new Inimigos("INIMIGO 3", 90, 2, 50, 1));
         Inimigos inimigo = inimigos1.get(rand.nextInt(inimigos1.size()));
@@ -293,18 +293,18 @@ public class Jogo {
             } else {
                 System.out.println("Você não tem mais cura");
             }
+             if (playerPV <= 0) {
+                System.out.println("GAME OVER");
+                System.out.println("Aperte qualquer tecla para continuar");
+                return;
+        }
         }
 
-        if (inimigoPV <= 0 || playerPV <= 0) {
-            break;
+       
         }
     }
 
-    if (playerPV <= 0) {
-        System.out.println("GAME OVER");
-        System.out.println("Aperte qualquer tecla para continuar");
-        break;
-    }
+   
 }
 
         Clear();
